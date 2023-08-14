@@ -152,4 +152,8 @@ button{
     align-items: center;
     width: 200px;
 }
+
+.decoration{
+    display: none;
+}
 }
