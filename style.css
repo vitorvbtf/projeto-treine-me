@@ -2,22 +2,34 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400;1,9..40,500;1,9..40,700&family=Inter:wght@400;500;600;700&family=Mulish:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 header{
    display: flex;
    flex-direction: row;
    justify-content: space-between; 
-   margin: 35px 153px 38px 122px;
+   margin: 35px 110px 38px; 
+   align-items: center;
 }
 
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    gap: 48px;
+
+li {
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+li + li {
+    margin-left: 30px;
 }
 
 .logo{
-    font-weight: 24px;
+    font-weight: 34px;
+    font-size: 28px;
     color: #89C5CC;
     font-weight: bold;
 }
@@ -111,13 +123,20 @@ footer{
 }
 @media(max-width:732px){
 header{
-    margin: 10px;
-    font-size: 80%;
+    flex-direction: column;
+    gap: 30px;
 }
 
-nav{
-    gap: 10px;
+.logo{
+    white-space: nowrap;
+    
 }
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 main{
     margin: 0;
@@ -135,7 +154,7 @@ h1{
 p{
     text-align: center;
     width: 100%;
-    font-size: 10px;
+    font-size: 16px;
 }
 
 button{
