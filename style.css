@@ -2,18 +2,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400;1,9..40,500;1,9..40,700&family=Inter:wght@400;500;600;700&family=Mulish:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-header{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between; 
-   margin: 35px 110px 38px; 
-   align-items: center;
+body {
+    background: rgb(244,255,238);
+background: linear-gradient(120deg, rgba(244,255,238,1) 0%, rgba(255,255,255,1) 98%);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 35px 110px 38px;
+    align-items: center;
 }
 
 
@@ -23,28 +28,28 @@ li {
 
 }
 
-li + li {
+li+li {
     margin-left: 30px;
 }
 
-.logo{
+.logo {
     font-weight: 34px;
     font-size: 28px;
     color: #89C5CC;
     font-weight: bold;
 }
 
-a{
+a {
     color: #1F1534;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     font-weight: bold;
 }
 
-main{
+main {
     display: flex;
     flex-direction: row;
     margin: 0 153px 32px 119px;
@@ -52,30 +57,30 @@ main{
 }
 
 
-.informacoes{
+.informacoes {
     display: flex;
     flex-direction: column;
-    
+
 }
 
-h1{
+h1 {
     font-size: 49px;
     font-family: 'Mulish', sans-serif;
     font-weight: 400;
 }
 
-span{
+span {
     font-weight: bold;
     color: #89C5CC;
 }
 
-p{
+p {
     color: #7D7987;
     font-family: 'Open Sans', sans-serif;
     line-height: 28px;
 }
 
-button{
+button {
     display: flex;
     flex-direction: row;
     background-color: #69B99D;
@@ -89,90 +94,92 @@ button{
     align-items: center;
     font-family: 'DM Sans', sans-serif;
     border: none;
-    border-radius:4px ;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-button:active{
+button:active {
     background-color: #51917a;
 }
 
-footer{
+footer {
     text-align: center;
 }
 
-.instagram{
+.instagram {
     color: black;
 }
 
-.decoration{
+.decoration {
     position: fixed;
     bottom: 0;
     right: 0;
 }
 
-@media(max-width:1232px){
-    main{
+@media(max-width:1232px) {
+    main {
         flex-direction: column-reverse;
     }
 
-    button{
+    button {
         justify-content: center;
     }
-    
-}
-@media(max-width:732px){
-header{
-    flex-direction: column;
-    gap: 30px;
+
 }
 
-.logo{
-    white-space: nowrap;
-    
-}
+@media(max-width:732px) {
+    header {
+        flex-direction: column;
+        gap: 30px;
+    }
 
-ul{
-    display: flex;
-    justify-content: space-between;
-}
+    .logo {
+        white-space: nowrap;
+
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
 
 
-main{
-    margin: 0;
-    gap: 0;
-}
+    main {
+        margin: 0;
+        gap: 0;
+    }
 
-.informacoes{
-    width: 100%;
-}
-h1{
-    text-align: center;
-    font-size: 34px;
-}
+    .informacoes {
+        width: 100%;
+    }
 
-p{
-    text-align: center;
-    width: 100%;
-    font-size: 16px;
-}
+    h1 {
+        text-align: center;
+        font-size: 34px;
+    }
 
-button{
-    margin: auto;
-    text-align: center;
-}
+    p {
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+    }
 
-.imagens{
-    display: flex;
-    justify-content: center;
-}
+    button {
+        margin: auto;
+        text-align: center;
+    }
 
-.imagem{
-    align-items: center;
-    width: 200px;
-}
+    .imagens {
+        display: flex;
+        justify-content: center;
+    }
 
-.decoration{
-    display: none;
-}
+    .imagem {
+        align-items: center;
+        width: 200px;
+    }
+
+    .decoration {
+        display: none;
+    }
 }
